@@ -15,7 +15,7 @@
 
     .parallax {
       min-height: 100vh;
-      background: url(hero-bg.jpeg) no-repeat center center/cover;
+      background: url(assets/hero-bg.jpeg) no-repeat center center/cover;
       position: fixed;
       top: 0;
       left: 0;
