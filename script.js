@@ -2,7 +2,7 @@ const audioCtrl = document.getElementById('audioCtrl');
     const audioImg = document.getElementById('audioImg');
     const bgAudio = document.getElementById('bgAudio');
 
-    const audioOnImg = "music.png";
+    const audioOnImg = "assets/music.png";
     const audioOffImg = "https://static.thenounproject.com/png/1680900-200.png";
 
     audioImg.src = audioOffImg;
