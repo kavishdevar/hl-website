@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()   
 app = Flask(__name__)
-CORS(app, origins=["https://hacklumina.github.io"])  
+CORS(app)  
 
 botToken = os.getenv('BOT_TOKEN')
 channelID = os.getenv('CHANNEL_ID')
