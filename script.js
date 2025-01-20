@@ -33,7 +33,7 @@ subBtn.addEventListener('click', async () => {
     msg: msg,
   };
   try {
-    const response = await fetch('http://127.0.0.1:5000/send', {
+    const response = await fetch('http://37.27.51.34:44739/send', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
