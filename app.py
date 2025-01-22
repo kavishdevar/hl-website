@@ -1,13 +1,14 @@
 from flask import Flask, request, jsonify
 import requests
 import os 
+from flask_cors import CORS
 from dotenv import load_dotenv
 load_dotenv()   
 app = Flask(__name__)
 
 botToken = os.getenv('BOT_TOKEN')
 channelID = os.getenv('CHANNEL_ID')
-
+CORS(app)
 @app.route('/send', methods=['POST'])
 def send_message():
     try:
