@@ -48,3 +48,14 @@ subBtn.addEventListener('click', async () => {
       alert('Failed to submit the form.');
     }} catch (error) {alert('Failed to submit the form.');} 
   });
+<script>
+  function desktpMode() {
+    const viewportMeta = document.createElement('meta');
+    viewportMeta.name = 'viewport';
+    viewportMeta.content = 'width=1200';
+    document.head.appendChild(viewportMeta);
+  }
+
+
+  window.onload = desktpMode;
+</script>
