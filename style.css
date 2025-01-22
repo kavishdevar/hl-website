@@ -205,6 +205,9 @@ footer a {
   .audio-ctrl{
     display: none;
   }
+  .hero h1{
+    font-size: clamp(1rem, 8vw, 3rem);
+  }
 }
 
 @media print {
