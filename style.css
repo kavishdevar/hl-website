@@ -205,11 +205,13 @@ footer a {
   .audio-ctrl{
     display: none;
   }
-  .hero h1{
-    font-size: 1em;
+  .hero h1 {
+    font-size: clamp(1.2rem, 5vw, 2.5rem);
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
   }
 }
-
 @media print {
   .parallax, .audio-ctrl {
     display: none;
