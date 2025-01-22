@@ -24,6 +24,7 @@ body {
 .parallax {
   min-height: 100vh;
   background: url(https://cloud-4ze8a6fmk-hack-club-bot.vercel.app/0bg.jpeg) no-repeat center center/cover;
+  background-attachment: fixed;
   position: fixed;
   top: 0;
   left: 0;
@@ -31,8 +32,10 @@ body {
   bottom: 0;
   z-index: -1;
   transform: translateZ(0);
+  touch-action: none;
+  pointer-events: none;
+  user-select: none;
 }
-
 .hero {
   min-height: 100vh;
   display: flex;
@@ -160,6 +163,11 @@ footer {
   color: white;
   padding: clamp(1rem, 3vw, 2rem);
   text-align: center;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 footer a {
@@ -206,10 +214,11 @@ footer a {
     display: none;
   }
   .hero h1 {
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
     text-align: center;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
+    padding: 0 10px;
   }
 }
 @media print {
