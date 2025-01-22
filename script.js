@@ -33,7 +33,7 @@ subBtn.addEventListener('click', async () => {
     msg: msg,
   };
   try {
-    const response = await fetch('http://37.27.51.34:44739/send', {
+    const response = await fetch('https://hacklumina.manancoder.hackclub.app/send', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
