@@ -50,7 +50,7 @@ body {
   -webkit-text-stroke: 0.7px black;
   text-shadow: 5px 5px 25px #060606;
   color: rgb(250, 248, 233);
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
   word-wrap: break-word;
 }
