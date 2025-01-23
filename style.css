@@ -46,10 +46,13 @@ body {
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 8vw, 4.5rem);
+  font-size: clamp(1.5rem, 10vw, 4.5rem);
   -webkit-text-stroke: 0.7px black;
   text-shadow: 5px 5px 25px #060606;
   color: rgb(250, 248, 233);
+  max-width: 90%;
+  margin: 0 auto;
+  word-wrap: break-word;
 }
 
 .section {
@@ -212,13 +215,6 @@ footer a {
   }
   .audio-ctrl{
     display: none;
-  }
-  .hero h1 {
-    font-size: clamp(0.8rem, 3vw, 1.5rem);
-    text-align: center;
-    width: 85%;
-    margin: 0 auto;
-    padding: 0 10px;
   }
 }
 @media print {
