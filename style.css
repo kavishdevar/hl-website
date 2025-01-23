@@ -202,7 +202,7 @@ footer a {
 }
 
 @media (max-width: 480px) {
-  .email, .emails {
+  .email, .emails, .org {
     display: none;
   }
   
