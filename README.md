@@ -10,3 +10,4 @@ The following website has the static frontend, but the query form at the bottom 
 [![Watch the video](https://cloud-8js68307l-hack-club-bot.vercel.app/0ss.png)](https://cloud-8js68307l-hack-club-bot.vercel.app/1video.mp4)
 
 
+Help of AI has been taken to complete this project... Thanks!
