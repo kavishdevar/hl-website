@@ -20,6 +20,7 @@ audioCtrl.addEventListener('click', () => {
 const subBtn = document.getElementById('subBtn');
 
 subBtn.addEventListener('click', async () => {
+  location.reload();
   const nameIn = document.getElementById('nameIn').value;
   const email = document.getElementById('emailIn').value;
   const msg = document.getElementById('msgIn').value;
