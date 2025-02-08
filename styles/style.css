@@ -271,3 +271,42 @@ footer a {
   box-shadow: 0 10px 40px 0 rgba(115, 115, 115, 0.5);
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .subsection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subsection h2 {
+    font-size: 1.5rem;
+  }
+
+  .subsection p {
+    font-size: 1rem;
+  }
+
+  .subsection ul {
+    font-size: 1rem;
+  }
+
+  .run-of-show th,
+  .run-of-show td,
+  .contact-table th,
+  .contact-table td {
+    font-size: 0.9rem;
+  }
+
+  .conForm input,
+  .conForm textarea {
+    font-size: 1rem;
+  }
+
+  .subButton {
+    font-size: 1rem;
+  }
+
+  footer a {
+    font-size: 1rem;
+  }
+}
