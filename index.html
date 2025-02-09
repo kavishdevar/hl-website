@@ -8,6 +8,7 @@
   <meta name="author" content="HackLumina Team">
   <title>HackLumina'25 - Solarpunk Hackathon</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="/styles/chatbot.css">
 </head>
 <body>
   <div class="parallax"></div>
@@ -192,10 +193,15 @@ The people who are making this amazing event possible!
         <a href="prospectus/HackLumina Prospectus.pdf" style="text-decoration: none;"><button class="pros-button">Our Prospectus</button></a>
     </div>
   </section>
-  <section class="section">
-    <div class="subsection">
+  <section class="section" style="height: 600px;">
+    <div class="subsection" style="height: 100%;">
       <h2>Our Chatbot</h2>
-        <a href="html/chatbot.html" style="text-decoration: none;"><button class="pros-button">Here!</button></a>
+        <div class="chat-box" id="chat-box" style = "font-family: 'Space Mono',monospace; width:100%; height:350px;"></div>
+        <div class="input-area" style="  width: 100%;">
+            <input type="text" id="user-input" placeholder="Type a message..." onkeypress="enterSend(event)" style="width: 100%;">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+  
     </div>
   </section>
   <section class="section">
@@ -265,5 +271,6 @@ The people who are making this amazing event possible!
     Your browser does not support the audio element.
   </audio>
   <script src="js/script.js"></script>
+  <script src="/js/chatbot.js"></script>
 </body>
 </html>
