@@ -57,7 +57,7 @@ function getbot_msg(input) {
         { pattern: /\bhey\b/i, response: "Hi there! How can I help you?" },
         { pattern: /\bhow are you\b/i, response: "I'm just a bot, but I'm doing great!" },
         { pattern: /\bwho are you\b/i, response: "I'm a simple chatbot!" },
-        { pattern: /\bsup\b/i, response: "Hey! How can I help you today?" },
+        { pattern: /\bsup|whatsup\b/i, response: "Hey! How can I help you today?" },
         { pattern: /\bwhat's up\b/i, response: "Hey! How can I help you today?" },
         { pattern: /\bgood morning\b/i, response: "Good morning! How can I assist you?" },
         { pattern: /\bgood afternoon\b/i, response: "Good afternoon! How can I assist you?" },
@@ -70,7 +70,7 @@ function getbot_msg(input) {
 
 
         { pattern: /\byour name\b/i, response: "I'm blummy!" },
-        { pattern: /\b(what is hacklumina|what is hacklumina'25)\b/i, 
+        { pattern: /\b(what is hacklumina|what is hacklumina'25|whats hacklumina|whats hacklumina'25)\b/i, 
           response: "HackLumina'25 is a 36-hour in-person hackathon that brings students of all levels together for coding, learning, and collaboration in Delhi/NCR in May 2025. Registration is free!" },
         { pattern: /\bwhen is hacklumina\b/i, response: "HackLumina is scheduled for May 2025 (Exact date: TBD)." },
         { pattern: /\bwhere is hacklumina\b/i, response: "HackLumina will be held in Delhi/NCR (Venue: TBD)." },
@@ -201,5 +201,5 @@ function getbot_msg(input) {
             return entry.response;
         }
     }
-    return "I'm not sure how to respond to that.";
+    return "I'm not sure how to respond to that. If you think you have an important query and didn't misslepelled it, please fill the form at the bottom and we will get back to you as soon as possible.";
 }
