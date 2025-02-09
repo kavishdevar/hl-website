@@ -201,5 +201,5 @@ function getbot_msg(input) {
             return entry.response;
         }
     }
-    return "I'm not sure how to respond to that. If you think you have an important query and didn't misslepelled it, please fill the form at the bottom and we will get back to you as soon as possible.";
+    return "I'm not sure how to respond to that. If you think you have an important query and didn't misslepelled it, please fill the form at the bottom and we will get back to you as soon as possible :)";
 }
