@@ -130,7 +130,7 @@ function getbot_msg(input) {
                     </div>` },
                     
 
-        { pattern: /\bschedule\b/i, 
+        { pattern: /\bschedule| run of show\b/i, 
           response: `<div class="modal-container">
                       <span class="modal-trigger" style="cursor: pointer; text-decoration: underline; color: #0077cc;">
                         Run of Show
@@ -183,6 +183,13 @@ function getbot_msg(input) {
                       </div>
                     </div>` },
         { pattern: /\bsponsors\b/i, response: "Our featured sponsor is Saral Technologies. (More sponsors will be announced soon!)" },
+        { 
+            pattern: /\bsponsor\b/i, 
+            response: "Our featured sponsor is Saral Technologies. (More sponsors will be announced soon!). Interested in sponsoring HackLumina? Check out our <a href='/prospectus/HackLumina%20Prospectus.pdf'>prospectus</a> here:" 
+          },          
+        { pattern: /\bsponsor you\b/i, response: "Interested in sponsoring HackLumina? Check out our prospectus here: <a href='/prospectus/HackLumina Prospectus.pdf'>HackLumina Prospectus</a>" },
+        { pattern: /\bsponsor hacklumina\b/i, response: "Interested in sponsoring HackLumina? Check out our prospectus here: <a href='prospectus/HackLumina%20Prospectus.pdf'>HackLumina Prospectus</a>" },
+        { pattern: /\bsponsor hackathon\b/i, response: "Interested in sponsoring HackLumina? Check out our prospectus here: <a href='prospectus/HackLumina%20Prospectus.pdf'>HackLumina Prospectus</a>" },
         { pattern: /\bsponsor us\b/i, response: "Interested in sponsoring HackLumina? Check out our prospectus here: <a href='prospectus/HackLumina%20Prospectus.pdf'>HackLumina Prospectus</a>" },
         { pattern: /\bfeatures\b/i, response: "The website includes interactive features like a message form, background audio controls, parallax scrolling, and social media links (Twitter, Instagram, and LinkedIn)." }
     ];
