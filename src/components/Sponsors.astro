@@ -1,25 +1,26 @@
 ---
-const sponsors = ["TechCorp", "GreenEnergy", "InnovateX"];
+import { Image } from 'astro:assets';
+import saralTechLogo from '../assets/sponsors/saral-tech.png';
+
+const sponsors = [
+  {
+    name: "Saral Technologies",
+    logo: saralTechLogo,
+  },
+];
 ---
 
-<section class="sponsors">
+<section class="section">
+  <div class="subsection">
     <h2>Our Sponsors</h2>
-    <ul>
-        {sponsors.map(sponsor => <li>{sponsor}</li>)}
-    </ul>
+    <p>The people who are making this amazing event possible!</p>
+    <div class="sponsors">
+      {sponsors.map(({ name, logo, alt }) => (
+        <div class="sponsor" style="font-size: 1.5rem;">
+          <Image src={logo} alt={name} style={{ width: "12rem", height: "auto" }} />
+          {name}
+        </div>
+      ))}
+    </div>
+  </div>
 </section>
-
-<style>
-.sponsors {
-    text-align: center;
-    padding: 3rem;
-    background: #f8f8f8;
-}
-ul {
-    list-style: none;
-    padding: 0;
-}
-li {
-    font-size: 1.2rem;
-}
-</style>
