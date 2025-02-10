@@ -57,8 +57,8 @@ function getbot_msg(input) {
         { pattern: /\bhey\b/i, response: "Hi there! How can I help you?" },
         { pattern: /\bhow are you\b/i, response: "I'm just a bot, but I'm doing great!" },
         { pattern: /\bwho are you\b/i, response: "I'm a simple chatbot!" },
-        { pattern: /\bsup|whatsup\b/i, response: "Hey! How can I help you today?" },
-        { pattern: /\bwhat's up\b/i, response: "Hey! How can I help you today?" },
+        { pattern: /\bsup|whatsup\b/i, response: "Sup! What you gonna ask me today to free up your mind???" },
+        { pattern: /\bwhat's up\b/i, response: "sup buddy! You seem to have some problems, hmmm" },
         { pattern: /\bgood morning\b/i, response: "Good morning! How can I assist you?" },
         { pattern: /\bgood afternoon\b/i, response: "Good afternoon! How can I assist you?" },
         { pattern: /\bgood evening\b/i, response: "Good evening! How can I assist you?" },
@@ -71,9 +71,9 @@ function getbot_msg(input) {
 
         { pattern: /\byour name\b/i, response: "I'm blummy!" },
         { pattern: /\b(what is hacklumina|what is hacklumina'25|whats hacklumina|whats hacklumina'25)\b/i, 
-          response: "HackLumina'25 is a 36-hour in-person hackathon that brings students of all levels together for coding, learning, and collaboration in Delhi/NCR in May 2025. Registration is free!" },
-        { pattern: /\bwhen is hacklumina\b/i, response: "HackLumina is scheduled for May 2025 (Exact date: TBD)." },
-        { pattern: /\bwhere is hacklumina\b/i, response: "HackLumina will be held in Delhi/NCR (Venue: TBD)." },
+          response: "HackLumina'25 is a cool 36-hour in-person hackathon that brings students of all levels together for coding, learning, and collaboration in Delhi/NCR in May 2025. Registration is free!" },
+        { pattern: /\b(when is hacklumina|whens hacklumina|whats is hacklumina'25|whens hacklumina'25)\b/i, response: "HackLumina is scheduled for May 2025 (Exact date: TBD)." },
+        { pattern: /\b(where is hacklumina|venue|wheres hacklumina|wheres hacklumina'25)\b/i, response: "HackLumina will be held in Delhi/NCR (Venue: TBD)." },
         { pattern: /\b(event details|what are the details of the event)\b/i, 
           response: "HackLumina'25 features in-person workshops, mentorship sessions, networking opportunities, and exciting rewards like certificates and prizes—all designed to inspire and educate. Plus, it's completely free to register!" },
         { pattern: /\btheme\b/i, 
@@ -93,35 +93,34 @@ function getbot_msg(input) {
                             <thead>
                               <tr>
                                 <th>Name</th>
-                                <th>Role</th>
+                    
                                 <th>Email</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
                                 <td>Angad</td>
-                                <td>Logistics &amp; Sponsorship</td>
+                             
                                 <td><a href="mailto:angad@hacklumina.tech">angad@hacklumina.tech</a></td>
                               </tr>
                               <tr>
                                 <td>Shrey</td>
-                                <td>Logistics &amp; Ground Ops</td>
+                                
                                 <td><a href="mailto:shrey@hacklumina.tech">shrey@hacklumina.tech</a></td>
                               </tr>
                               <tr>
                                 <td>Kavish</td>
-                                <td>Technical Support &amp; Sponsorship</td>
+                            
                                 <td><a href="mailto:kavish@hacklumina.tech">kavish@hacklumina.tech</a></td>
                               </tr>
                               <tr>
                                 <td>Manan</td>
-                                <td>Technical Support &amp; Workshops</td>
+                           
                                 <td><a href="mailto:manan@hacklumina.tech">manan@hacklumina.tech</a></td>
                               </tr>
                               <tr>
-                                <td>Org</td>
-                                <td>General Inquiries</td>
-                                <td><a href="mailto:contact@hacklumina.tech">contact@hacklumina.tech</a></td>
+                                <td style="width:100px;">Org</td>
+                                <td style="width:400px;"><a href="mailto:contact@hacklumina.tech">contact@hacklumina.tech</a></td>
                               </tr>
                             </tbody>
                           </table>
@@ -130,7 +129,7 @@ function getbot_msg(input) {
                     </div>` },
                     
 
-        { pattern: /\bschedule| run of show\b/i, 
+        { pattern: /\bschedule|run of show\b/i, 
           response: `<div class="modal-container">
                       <span class="modal-trigger" style="cursor: pointer; text-decoration: underline; color: #0077cc;">
                         Run of Show
@@ -141,7 +140,7 @@ function getbot_msg(input) {
                           <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
                             <thead>
                               <tr>
-                                <th>Time</th>
+                                <th style="width:100px;">Time</th>
                                 <th>Event</th>
                               </tr>
                             </thead>
@@ -163,7 +162,7 @@ function getbot_msg(input) {
                           <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
                             <thead>
                               <tr>
-                                <th>Time</th>
+                                <th style="width:100px;">Time</th>
                                 <th>Event</th>
                               </tr>
                             </thead>
@@ -201,5 +200,5 @@ function getbot_msg(input) {
             return entry.response;
         }
     }
-    return "I'm not sure how to respond to that. If you think you have an important query and didn't misslepelled it, please fill the form at the bottom and we will get back to you as soon as possible :)";
+    return "I'm not sure how to respond to that. If you think you have an important query and didn't misslepelled it, please fill the form at the bottom and we will get back to you as soon as possible.";
 }
