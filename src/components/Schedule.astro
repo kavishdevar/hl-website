@@ -1,0 +1,32 @@
+---
+const schedule = [
+    { day: "Day 1", events: ["Opening Ceremony", "Team Formation", "Hacking Begins"] },
+    { day: "Day 2", events: ["Workshops", "Mentorship Sessions", "Project Demos"] }
+];
+---
+
+<section class="schedule">
+    <h2>Run of Show</h2>
+    {schedule.map(day => (
+        <div class="day">
+            <h3>{day.day}</h3>
+            <ul>
+                {day.events.map(event => <li>{event}</li>)}
+            </ul>
+        </div>
+    ))}
+</section>
+
+<style>
+.schedule {
+    text-align: center;
+    padding: 3rem;
+    background: #d8f3dc;
+}
+.day {
+    margin-top: 1rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+</style>

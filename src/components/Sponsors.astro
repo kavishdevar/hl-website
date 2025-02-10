@@ -1,0 +1,25 @@
+---
+const sponsors = ["TechCorp", "GreenEnergy", "InnovateX"];
+---
+
+<section class="sponsors">
+    <h2>Our Sponsors</h2>
+    <ul>
+        {sponsors.map(sponsor => <li>{sponsor}</li>)}
+    </ul>
+</section>
+
+<style>
+.sponsors {
+    text-align: center;
+    padding: 3rem;
+    background: #f8f8f8;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    font-size: 1.2rem;
+}
+</style>

@@ -1,0 +1,30 @@
+---
+const highlights = [
+    "Hands-on Workshops",
+    "Networking with Experts",
+    "Exciting Rewards & Prizes"
+];
+---
+
+<section class="highlights">
+    <h2>Why Join?</h2>
+    <ul>
+        {highlights.map(item => <li>{item}</li>)}
+    </ul>
+</section>
+
+<style>
+.highlights {
+    text-align: center;
+    padding: 3rem;
+    background: #fffbe6;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+</style>
