@@ -1,32 +1,18 @@
 ---
-const date = "June 20-22, 2025";
-const venue = "Lumina Innovation Hub, San Francisco";
-const registration = "Register Now";
+const venue = "TBD";
+const date = "TBD";
+const time = "TBD";
 ---
 
-<section class="event-details">
+<section class="section">
+  <div class="subsection">
     <h2>Event Details</h2>
-    <p><strong>Date:</strong> {date}</p>
-    <p><strong>Venue:</strong> {venue}</p>
-    <a href="/register" class="register-button">{registration}</a>
+    <p>
+      Venue: {venue}<br>
+      Date: {date}<br>
+      Time: {time}<br>
+      Registration Fee: Free!<br><br>
+      Stay tuned for more updates!
+    </p>
+  </div>
 </section>
-
-<style>
-.event-details {
-    text-align: center;
-    padding: 3rem;
-    background: #f0f8ff;
-}
-h2 {
-    font-size: 2rem;
-    color: #005f73;
-}
-.register-button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background: #ff4500;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-</style>
