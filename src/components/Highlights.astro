@@ -1,0 +1,27 @@
+---
+const highlights = [
+  {
+    title: "Workshops & Mentorship",
+    description: "Learn from industry experts and seasoned programmers."
+  },
+  {
+    title: "Networking Opportunities",
+    description: "Connect with like-minded peers and tech enthusiasts."
+  },
+  {
+    title: "Exciting Rewards",
+    description: "Win certificates, prizes, and recognition for your innovative projects."
+  }
+];
+---
+
+<section class="section">
+  <div class="subsection">
+    <h2>Highlights</h2>
+    <ul>
+      {highlights.map(({ title, description }) => (
+        <li><strong>{title}:</strong> {description}</li>
+      ))}
+    </ul>
+  </div>
+</section>

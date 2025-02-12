@@ -1,5 +1,5 @@
-const botAvatar = "/assets/chatbot/bot.png"; 
-const userAvatar = "/assets/chatbot/user.png";
+const botAvatar = "/src/assets/chatbot/bot.png"; 
+const userAvatar = "/src/assets/chatbot/user.png";
 
 function sendMessage() {
     const inputField = document.getElementById("user-input");

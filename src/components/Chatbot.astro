@@ -1,0 +1,15 @@
+---
+import "../styles/chatbot.css";
+---
+
+<script src="/src/scripts/chatbot.js" client:load></script>
+<section class="section" style="height: 600px;">
+  <div class="subsection" style="height: 100%;">
+    <h2>Our Chatbot</h2>
+      <div class="chat-box" id="chat-box" style = "font-family: 'Space Mono',monospace; width:100%; height:350px;"></div>
+      <div class="input-area" style="  width: 100%;">
+          <input type="text" id="user-input" placeholder="Type a message..." onkeypress="enterSend(event)" style="width: 100%;">
+          <button onclick="sendMessage()">Send</button>
+      </div>
+  </div>
+</section>
